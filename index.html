@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Данияр & Сати | Свадьба • 6 сентября 2026</title>
+  <meta name="description"
+    content="Данияр и Сати приглашают вас разделить радость их свадьбы 6 сентября 2026 года в Астане." />
+  <meta property="og:title" content="Данияр & Сати | Свадьба 6 сентября 2026" />
+  <meta property="og:description" content="Мы будем рады видеть вас на нашем торжестве" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Д&nbsp;&amp;&nbsp;С</a>
+      <ul class="nav-links">
+        <li><a href="#countdown" data-i18n="nav_timer">Таймер</a></li>
+        <li><a href="#story" data-i18n="nav_story">История</a></li>
+        <li><a href="#details" data-i18n="nav_details">Детали</a></li>
+        <li><a href="#gallery" data-i18n="nav_gallery">Галерея</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+
+      <!-- Language switcher -->
+      <div class="lang-switcher" id="lang-switcher" role="group" aria-label="Язык / Тіл">
+        <button class="lang-btn active" data-lang="ru" id="btn-ru">РУС</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="kk" id="btn-kk">ҚАЗ</button>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#countdown" data-i18n="nav_timer">Таймер</a>
+      <a href="#story" data-i18n="nav_story">История</a>
+      <a href="#details" data-i18n="nav_details">Детали</a>
+      <a href="#gallery" data-i18n="nav_gallery">Галерея</a>
+      <a href="#rsvp">RSVP</a>
+      <!-- Mobile lang switcher -->
+      <div class="mobile-lang">
+        <button class="lang-btn active" data-lang="ru">РУС</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="kk">ҚАЗ</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-invite animate-up" data-i18n="hero_invite">Приглашаем вас разделить нашу радость</p>
+      <div class="hero-names animate-up delay-1">
+        <span class="name-left">Данияр</span>
+        <span class="hero-amp">&amp;</span>
+        <span class="name-right">Сати</span>
+      </div>
+      <div class="hero-divider animate-up delay-2">
+        <span class="divider-line"></span>
+        <span class="divider-icon">✦</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero-date animate-up delay-2" data-i18n="hero_date">6 сентября 2026 года</p>
+      <p class="hero-city animate-up delay-3" data-i18n="hero_city">Астана, Казахстан</p>
+      <a href="#rsvp" class="btn-primary animate-up delay-3" data-i18n="hero_cta">Подтвердить присутствие</a>
+    </div>
+    <a href="#countdown" class="hero-scroll" aria-label="Прокрутить вниз">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ===== COUNTDOWN ===== -->
+  <section id="countdown">
+    <div class="container">
+      <p class="section-label" data-i18n="cd_label">До торжества осталось</p>
+      <div class="countdown-grid" id="countdown-timer">
+        <div class="countdown-item">
+          <span class="count-number" id="cd-days">00</span>
+          <span class="count-label" data-i18n="cd_days">Дней</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="count-number" id="cd-hours">00</span>
+          <span class="count-label" data-i18n="cd_hours">Часов</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="count-number" id="cd-minutes">00</span>
+          <span class="count-label" data-i18n="cd_minutes">Минут</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="count-number" id="cd-seconds">00</span>
+          <span class="count-label" data-i18n="cd_seconds">Секунд</span>
+        </div>
+      </div>
+      <p class="countdown-sub" data-i18n="cd_sub">6 сентября 2026, 18:00</p>
+    </div>
+  </section>
+
+  <!-- ===== STORY ===== -->
+  <section id="story">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="story_label">Наша история</p>
+        <h2 class="section-title" data-i18n="story_title">Как всё началось</h2>
+      </div>
+      <div class="story-grid">
+        <div class="story-card reveal">
+          <div class="story-icon">🌸</div>
+          <h3 data-i18n="story1_h">Знакомство</h3>
+          <p data-i18n="story1_p">Всё началось с одного взгляда и улыбки, которую невозможно забыть. Мы встретились там,
+            где меньше всего ожидали, и с тех пор наши пути неразлучны.</p>
+        </div>
+        <div class="story-card reveal">
+          <div class="story-icon">💫</div>
+          <h3 data-i18n="story2_h">Путешествие вместе</h3>
+          <p data-i18n="story2_p">Годы, проведённые вместе — это страницы нашей книги, наполненной смехом, приключениями
+            и бесчисленными воспоминаниями.</p>
+        </div>
+        <div class="story-card reveal">
+          <div class="story-icon">💍</div>
+          <h3 data-i18n="story3_h">Предложение</h3>
+          <p data-i18n="story3_p">В тот вечер, когда небо было усыпано звёздами, Данияр произнёс три главных слова, и
+            Сати сказала «да». Этот момент мы будем помнить вечно.</p>
+        </div>
+      </div>
+      <div class="couple-photo reveal">
+        <div class="couple-frame">
+          <img src="images/couple.png" alt="Данияр и Сати" />
+          <div class="couple-caption">Данияр &amp; Сати</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DETAILS ===== -->
+  <section id="details">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="det_label">Важная информация</p>
+        <h2 class="section-title" data-i18n="det_title">Детали торжества</h2>
+      </div>
+      <div class="details-grid">
+        <div class="detail-card reveal">
+          <div class="detail-icon" aria-hidden="true">📅</div>
+          <h3 data-i18n="det_date_h">Дата</h3>
+          <p data-i18n="det_date_p">6 сентября 2026 года</p>
+          <p class="detail-sub" data-i18n="det_date_sub">Воскресенье</p>
+        </div>
+        <div class="detail-card reveal">
+          <div class="detail-icon" aria-hidden="true">🕕</div>
+          <h3 data-i18n="det_time_h">Время</h3>
+          <p data-i18n="det_time_p">Начало в 18:00</p>
+          <p class="detail-sub" data-i18n="det_time_sub">Просим не опаздывать</p>
+        </div>
+        <div class="detail-card reveal">
+          <div class="detail-icon" aria-hidden="true">📍</div>
+          <h3 data-i18n="det_place_h">Место</h3>
+          <p data-i18n="det_place_p">Ресторан «Ғажайып»</p>
+          <p class="detail-sub" data-i18n="det_place_sub">пр. Магжана Жумабаева, 26, Астана</p>
+          <a href="https://2gis.kz/astana/firm/70000001032132659?m=71.486418%2C51.14548%2F18" target="_blank"
+            rel="noopener" class="detail-link" data-i18n="det_map_link">Открыть в 2ГИС →</a>
+        </div>
+        <div class="detail-card reveal">
+          <div class="detail-icon" aria-hidden="true">👗</div>
+          <h3 data-i18n="det_dress_h">Дресс-код</h3>
+          <p data-i18n="det_dress_p">Нарядный, праздничный</p>
+          <p class="detail-sub" data-i18n="det_dress_sub">Пастельные и светлые тона приветствуются</p>
+        </div>
+      </div>
+
+      <div class="map-wrapper reveal">
+        <a class="venue-photo-card" href="https://2gis.kz/astana/firm/70000001032132659?m=71.486418%2C51.14548%2F18"
+          target="_blank" rel="noopener" aria-label="Открыть расположение ресторана в 2ГИС">
+          <img src="images/venue.png" alt="Ресторан Ғажайып — место проведения свадьбы" />
+          <div class="venue-overlay">
+            <span class="venue-overlay-icon">📍</span>
+            <span class="venue-overlay-text" data-i18n="venue_open">Открыть в 2ГИС</span>
+          </div>
+        </a>
+        <div class="map-footer">
+          <span class="map-name" data-i18n="venue_name">📍 Ресторан «Ғажайып» — пр. Магжана Жумабаева, 26, Астана</span>
+          <a href="https://2gis.kz/astana/firm/70000001032132659?m=71.486418%2C51.14548%2F18" target="_blank"
+            rel="noopener" class="btn-outline btn-sm" data-i18n="venue_btn">Открыть в 2ГИС</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="gal_label">Фотогалерея</p>
+        <h2 class="section-title" data-i18n="gal_title">Наши воспоминания</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal g-tall">
+          <img src="images/1.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/2.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/3.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal g-wide">
+          <img src="images/4.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/5.jpg" alt="" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/6.jpg" alt="" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RSVP ===== -->
+  <section id="rsvp">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label" data-i18n="rsvp_label">Подтверждение</p>
+        <h2 class="section-title" data-i18n="rsvp_title">Вы придёте?</h2>
+        <p class="section-desc">
+          <span data-i18n="rsvp_desc_before">Пожалуйста, заполните форму ниже до </span><strong
+            data-i18n="rsvp_deadline">1 августа 2026</strong><span data-i18n="rsvp_desc_after">, чтобы мы могли
+            подготовиться к вашему приезду.</span>
+        </p>
+      </div>
+
+      <form class="rsvp-form reveal" id="rsvp-form" novalidate>
+        <div class="form-group">
+          <label for="full-name" data-i18n="form_name_label">ФИО</label>
+          <input type="text" id="full-name" name="fullName" data-i18n-placeholder="form_name_ph"
+            placeholder="Иванов Иван Иванович" required autocomplete="name" />
+          <span class="field-error" id="err-name"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="relation" data-i18n="form_rel_label">Кем вы приходитесь молодожёнам?</label>
+          <input type="text" id="relation" name="relation" data-i18n-placeholder="form_rel_ph"
+            placeholder="Например: родственник невесты, друг жениха..." required />
+          <span class="field-error" id="err-relation"></span>
+        </div>
+
+        <div class="form-group">
+          <label data-i18n="form_attend_label">Сможете ли вы присутствовать на свадьбе?</label>
+          <div class="radio-group" role="radiogroup" aria-label="Ответ на приглашение">
+            <label class="radio-label" for="attend-yes">
+              <input type="radio" id="attend-yes" name="attendance" value="Да" required />
+              <span class="radio-custom" aria-hidden="true"></span>
+              <span class="radio-text" data-i18n="form_yes"> Да, обязательно буду!</span>
+            </label>
+            <label class="radio-label" for="attend-maybe">
+              <input type="radio" id="attend-maybe" name="attendance" value="Еще не знаю" />
+              <span class="radio-custom" aria-hidden="true"></span>
+              <span class="radio-text" data-i18n="form_maybe"> Ещё не знаю</span>
+            </label>
+            <label class="radio-label" for="attend-no">
+              <input type="radio" id="attend-no" name="attendance" value="Нет" />
+              <span class="radio-custom" aria-hidden="true"></span>
+              <span class="radio-text" data-i18n="form_no"> К сожалению, не смогу</span>
+            </label>
+          </div>
+          <span class="field-error" id="err-attendance"></span>
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit" id="submit-btn">
+          <span class="btn-text" data-i18n="form_submit">Отправить</span>
+          <span class="btn-loader" aria-hidden="true"></span>
+        </button>
+      </form>
+
+      <div class="rsvp-success" id="rsvp-success" hidden>
+        <div class="success-icon">💌</div>
+        <h3 data-i18n="success_h">Спасибо!</h3>
+        <p data-i18n="success_p">Мы получили ваш ответ. До встречи на нашем торжестве!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-names">Данияр &amp; Сати</div>
+      <div class="footer-date">6 • 09 • 2026</div>
+      <p class="footer-quote" data-i18n="footer_quote">«Любовь долготерпит, милосердствует, не завидует, не
+        превозносится»</p>
+      <p class="footer-credits" data-i18n="footer_credits">Сделано с ❤️ для нашего особого дня</p>
+    </div>
+  </footer>
+
+  <!-- ===== AUDIO PLAYER ===== -->
+  <audio id="bg-music" loop>
+    <source src="song.mp3" type="audio/mpeg" />
+  </audio>
+  <button id="music-btn" class="music-btn" aria-label="Включить / Выключить музыку">
+    <svg id="music-icon-on" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" style="display: none;">
+      <path
+        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
+    </svg>
+    <svg id="music-icon-off" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <path
+        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
