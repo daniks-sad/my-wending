@@ -58,7 +58,7 @@ const translations = {
     rsvp_label: 'Подтверждение',
     rsvp_title: 'Вы придёте?',
     rsvp_desc_before: 'Пожалуйста, заполните форму ниже до ',
-    rsvp_deadline: '10 августа 2026',
+    rsvp_deadline: '25 августа 2026',
     rsvp_desc_after: ', чтобы мы могли подготовиться к вашему приезду.',
     form_name_label: 'ФИО',
     form_name_ph: 'Иванов Иван Иванович',
@@ -125,7 +125,7 @@ const translations = {
     rsvp_label: 'Растау',
     rsvp_title: 'Сіз келесіз бе?',
     rsvp_desc_before: 'Өтінемін, төмендегі форманы ',
-    rsvp_deadline: '2026 жылдың 10 тамызына дейін',
+    rsvp_deadline: '2026 жылдың 25 тамызына дейін',
     rsvp_desc_after: ' толтырыңыз, біз сіздің келуіңізге дайындалайық.',
     form_name_label: 'Аты-жөні',
     form_name_ph: 'Иванов Иван Иванович',
@@ -148,13 +148,13 @@ const translations = {
 };
 
 // ── I18N ENGINE ───────────────────────────────────────
-let currentLang = localStorage.getItem('wedding_lang') || 'kk';
+let currentLang = localStorage.getItem('wedding_lang_v2') || 'kk';
 
 function applyLang(lang) {
   const t = translations[lang];
   if (!t) return;
   currentLang = lang;
-  localStorage.setItem('wedding_lang', lang);
+  localStorage.setItem('wedding_lang_v2', lang);
   document.documentElement.lang = lang;
 
   // Обновляем textContent всех [data-i18n] элементов
