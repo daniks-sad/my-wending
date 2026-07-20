@@ -4,7 +4,7 @@
    ====================================================== */
 
 // ── CONFIG ────────────────────────────────────────────
-const APPS_SCRIPT_URL = 'ВСТАВЬТЕ_СЮДА_ССЫЛКУ_ВЕБ-ПРИЛОЖЕНИЯ';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxrlE-BCH-xs5ZxIfHnBjicCFogr0fYxndOKF6YXdkOBGZgO6LMDjEPgxgI0j9hcB9q/exec';
 
 const WEDDING_DATE = new Date('2026-09-06T16:00:00+06:00');
 
