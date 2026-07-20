@@ -367,11 +367,6 @@ applyLang(currentLang);
     submitBtn.classList.add('loading');
     submitBtn.disabled = true;
 
-    if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbxrlE-BCH-xs5ZxIfHnBjicCFogr0fYxndOKF6YXdkOBGZgO6LMDjEPgxgI0j9hcB9q/exec')) {
-      await new Promise(r => setTimeout(r, 1200));
-      showSuccess();
-      return;
-    }
 
     try {
       await fetch(APPS_SCRIPT_URL, {
