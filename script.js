@@ -6,7 +6,7 @@
 // ── CONFIG ────────────────────────────────────────────
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxrlE-BCH-xs5ZxIfHnBjicCFogr0fYxndOKF6YXdkOBGZgO6LMDjEPgxgI0j9hcB9q/exec';
 
-const WEDDING_DATE = new Date('2026-09-06T16:00:00+06:00');
+const WEDDING_DATE = new Date('2026-09-06T17:00:00+06:00');
 
 // ══════════════════════════════════════════════════════
 // TRANSLATIONS — Словарь переводов (ru / kk)
@@ -26,7 +26,7 @@ const translations = {
     cd_hours: 'Часов',
     cd_minutes: 'Минут',
     cd_seconds: 'Секунд',
-    cd_sub: '6 сентября 2026, 16:00',
+    cd_sub: '6 сентября 2026, 17:00',
     story_label: 'Наша история',
     story_title: 'Как всё началось',
     story1_h: 'Знакомство',
@@ -41,7 +41,7 @@ const translations = {
     det_date_p: '6 сентября 2026 года',
     det_date_sub: 'Воскресенье',
     det_time_h: 'Время',
-    det_time_p: 'Начало в 16:00',
+    det_time_p: 'Начало в 17:00',
     det_time_sub: 'Просим не опаздывать',
     det_place_h: 'Место',
     det_place_p: 'Ресторан «Ғажайып»',
@@ -93,7 +93,7 @@ const translations = {
     cd_hours: 'Сағат',
     cd_minutes: 'Минут',
     cd_seconds: 'Секунд',
-    cd_sub: '2026 жылдың 6 қыркүйегі, 16:00',
+    cd_sub: '2026 жылдың 6 қыркүйегі, 17:00',
     story_label: 'Біздің тарихымыз',
     story_title: 'Бәрі қалай басталды',
     story1_h: 'Танысу',
@@ -108,7 +108,7 @@ const translations = {
     det_date_p: '2026 жылдың 6 қыркүйегі',
     det_date_sub: 'Жексенбі',
     det_time_h: 'Уақыты',
-    det_time_p: '16:00-де басталады',
+    det_time_p: '17:00-де басталады',
     det_time_sub: 'Кешікпеуіңізді өтінеміз',
     det_place_h: 'Орны',
     det_place_p: '«Ғажайып» мейрамханасы',
@@ -148,7 +148,7 @@ const translations = {
 };
 
 // ── I18N ENGINE ───────────────────────────────────────
-let currentLang = localStorage.getItem('wedding_lang') || 'ru';
+let currentLang = localStorage.getItem('wedding_lang') || 'kk';
 
 function applyLang(lang) {
   const t = translations[lang];
